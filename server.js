@@ -17,7 +17,7 @@ app.use(cors());
 
 // Routes
 app.use("/api/users", require("./routes/userRoutes"));
-app.use("/api", require("./routes/taskRoutes"));
+app.use("/api/", require("./routes/taskRoutes"));
 
 // Root Route
 app.get("/", (req, res) => {
